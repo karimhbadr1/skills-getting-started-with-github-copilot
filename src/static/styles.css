@@ -104,17 +104,27 @@ section h3 {
   background: #fce4ec;
   color: #c62828;
   border-radius: 50%;
-  width: 22px;
-  height: 22px;
-  line-height: 18px;
-  text-align: center;
-  font-weight: bold;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0;
   cursor: pointer;
   margin-left: 8px;
+  transition: background 0.2s ease, transform 0.1s ease;
 }
 
 .remove-participant:hover {
   background: #ef9a9a;
+  transform: scale(1.08);
+}
+
+.remove-participant:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(198, 40, 40, 0.25);
 }
 
 .no-participants {
